@@ -2,6 +2,7 @@ import Link from "next/link";
 import { cachedSanityFetch } from "@/sanity/lib/live";
 import { POSTS_QUERY } from "@/sanity/lib/queries";
 
+
 export default async function Page() {
   const { data: posts } = await cachedSanityFetch({ query: POSTS_QUERY });
 
