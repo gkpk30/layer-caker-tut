@@ -4,12 +4,12 @@ import Image from 'next/image'
 import { Author } from '@/components/author'
 import { Categories } from '@/components/categories'
 import { components } from '@/sanity/portableTextComponents'
-import { POST_QUERYResult } from '@/sanity/types'
+import { POST_QUERY_RESULT } from '@/sanity/types'
 import { PublishedAt } from '@/components/published-at'
 import { Title } from '@/components/title'
 import { urlFor } from '@/sanity/lib/image'
 
-export function Post(props: NonNullable<POST_QUERYResult>) {
+export function Post(props: NonNullable<POST_QUERY_RESULT>) {
   const { title, author, mainImage, body, publishedAt, categories } = props;
 
   return (

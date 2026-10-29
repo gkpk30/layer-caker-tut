@@ -3,11 +3,11 @@ import Image from 'next/image'
 
 import { Author } from '@/components/author'
 import { Categories } from '@/components/categories'
-import { POSTS_QUERYResult } from '@/sanity/types'
+import { POSTS_QUERY_RESULT } from '@/sanity/types'
 import { PublishedAt } from '@/components/published-at'
 import { urlFor } from '@/sanity/lib/image'
 
-export function PostCard(props: POSTS_QUERYResult[0]) {
+export function PostCard(props: POSTS_QUERY_RESULT[0]) {
   const { title, author, mainImage, publishedAt, categories } = props
 
   return (
